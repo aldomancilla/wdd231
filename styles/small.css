@@ -103,8 +103,8 @@ footer {
 }
 
 .social a:hover {
-  border-color: #0062ff;
-  border-radius: 50%;
+  border: #0062ff solid 1px;
+  border-radius: 50%;;
 }
 
 /* container  */
