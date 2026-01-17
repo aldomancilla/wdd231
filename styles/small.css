@@ -1,10 +1,6 @@
 /* base colors #0062ff - #000000 */
 
-body,
-header,
-nav,
-main,
-footer {
+body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
