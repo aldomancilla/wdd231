@@ -1,0 +1,35 @@
+@media only screen and (min-width: 38rem) {
+  main,
+  header,
+  nav,
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  .navigation {
+    display: block;
+  }
+  .navigation ul {
+    display: flex;
+  }
+  .navigation a {
+    border: none;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  .course_cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+  }
+}
