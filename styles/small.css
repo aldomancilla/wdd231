@@ -104,11 +104,8 @@ footer {
 }
 
 .social a:hover {
-  background-color: #0062ff;
+  background-color: #ccc;
   border-radius: 50%;
-  img {
-    filter: invert(100%);
-  }
 }
 
 /* container  */
@@ -117,6 +114,12 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+}
+
+.division {
+  display: grid;
+  justify-items: center;
+  color: #ccc;
 }
 
 .aboutme,

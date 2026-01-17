@@ -24,6 +24,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
+    min-height: 300px;
   }
 
   .course_cont {
