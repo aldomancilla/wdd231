@@ -61,7 +61,7 @@ header img {
 
 .navigation li.active {
   border-bottom: #0062ff solid 2px;
-  font-style: italic;
+  border-top: #0062ff solid 2px;
 }
 
 .navigation a:hover {

@@ -18,8 +18,11 @@
     display: flex;
   }
   .navigation a {
-    min-width: 100px
     border: none;
+  }
+  .navigation li {
+    min-width: 120px;
+    text-align: center;
   }
   .container {
     display: grid;
