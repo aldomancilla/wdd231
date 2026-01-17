@@ -74,7 +74,6 @@ courses.forEach((course, index) => {
     courseButtons[index].style.backgroundColor = "#0062ff";
     courseButtons[index].style.color = "#ffffff";
     courseButtons[index].style.border = "#0062ff solid 2px";
-
   } else {
     courseButtons[index].style.backgroundColor = "#ffffff";
     courseButtons[index].style.color = "#000000";
