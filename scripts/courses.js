@@ -73,6 +73,12 @@ courses.forEach((course, index) => {
   if (course.completed) {
     courseButtons[index].style.backgroundColor = "#0062ff";
     courseButtons[index].style.color = "#ffffff";
+    courseButtons[index].style.border = "#0062ff solid 2px";
+
+  } else {
+    courseButtons[index].style.backgroundColor = "#ffffff";
+    courseButtons[index].style.color = "#000000";
+    courseButtons[index].style.border = "#000000 solid 2px";
   }
 });
 

@@ -56,16 +56,17 @@ header img {
   display: block;
   padding: 0.8rem 20px;
   color: #000000;
-  border-bottom: solid 1px #ccc;
   text-decoration: none;
 }
 
 .navigation li.active {
-  background-color: #edecec;
+  border-bottom: #0062ff solid 2px;
+  font-style: italic;
 }
 
 .navigation a:hover {
   background-color: #0062ff;
+  border-bottom: #0062ff solid 2px;
   color: #ffffff;
 }
 
@@ -104,7 +105,7 @@ footer {
 
 .social a:hover {
   border: #0062ff solid 1px;
-  border-radius: 50%;;
+  border-radius: 50%;
 }
 
 /* container  */
