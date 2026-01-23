@@ -79,7 +79,7 @@ ul.navigation li a {
 
 li.current-menu-item a {
   border-bottom: 1.5px solid var(--accent1-color);
-  border-top: .5px solid var(--accent1-color);
+  border-top: 0.5px solid var(--accent1-color);
 }
 
 nav ul {
@@ -130,11 +130,11 @@ ul.navigation.open {
 .grid section {
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   padding: 1rem;
   text-align: center;
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--accent2-color);
 }
 
 .grid img {
@@ -187,7 +187,8 @@ ul.navigation.open {
 }
 
 .list section:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: var(--accent1-color);
+  /* background-color: rgba(0, 0, 0, 0.03); */
 }
 
 section h3 {
