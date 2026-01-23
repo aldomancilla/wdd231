@@ -194,7 +194,6 @@ ul.navigation.open {
 
 .list section:nth-child(even) {
   background-color: var(--accent1-color);
-  background-color: rgba(0, 0, 0, 0.03);
 }
 
 section h3 {
