@@ -1,0 +1,70 @@
+@media only screen and (min-width: 38rem) {
+  main,
+  nav {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  #hambutton {
+    display: none;
+  }
+
+  ul.navigation,
+  ul.navigation.open {
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+  }
+
+  ul.navigation a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+  nav {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .list section img {
+    display: none;
+  }
+
+  .list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+  }
+
+  section p {
+    font-size: 1rem;
+    color: var(--primary-color);
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .footer-column {
+    width: 30%;
+  }
+
+  .footer-column.center {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .social-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+  }
+}

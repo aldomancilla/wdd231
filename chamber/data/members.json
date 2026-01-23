@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Pinula Barber Shop",
+        "address": "4 avenue 18 street, Zone 1, San Jose Pinula, Guatemala City, Guatemala",
+        "phone_number": "(502) 5655-1234",
+        "websiteUrl": "https://www.barberpinula.com/",
+        "image_file": "barber_logo.jpg",
+        "membershipLevel": "3",
+        "industry": "Healthcare",
+        "year_founded": "2022"
+    },
+    {
+        "name": "Green Solutions Guatemala",
+        "address": "7 avenue 20 street, Zone 4, Guatemala City, Guatemala",
+        "phone_number": "(502) 4545-5678",
+        "website_url": "https://www.greensolutionsgt.com",
+        "image_file": "gs_logo.jpg",
+        "membership_level": 2,
+        "industry": "Environmental Services",
+        "year_founded": 2018
+      },
+      {
+        "name": "Cafe Boreal",
+        "address": "6 street 9 avenue Coffee St, Antigua Guatemala, Sacatepéquez, Guatemala",
+        "phone_number": "(502) 9045-8765",
+        "website_url": "https://www.cafeborealgt.com",
+        "image_file": "cafe_logo.jpg",
+        "membership_level": 1,
+        "industry": "Food & Beverage"
+      },
+      {
+        "name": "Guatemala Logistics Co.",
+        "address": "3 avenue 5 street, Zone 12, Guatemala City, Guatemala",
+        "phone_number": "(502) 2233-2345",
+        "website_url": "https://www.gtlogistics.com",
+        "image_file": "ts_logo.jpg",
+        "membership_level": 3,
+        "industry": "Logistics",
+        "year_founded": 2002
+      },
+      {
+        "name": "Secure Finance Guatemala",
+        "address": "7 street 9 avenue Financial Blvd, Zone 13, Guatemala City, Guatemala",
+        "phone_number": "(502) 4455-3456",
+        "website_url": "https://www.securefinancegt.com",
+        "image_file": "finance_logo.jpg",
+        "membership_level": 2,
+        "industry": "Finance",
+        "year_founded": 2019
+      },
+      {
+        "name": "Creative Designs Agency",
+        "address": "234 Artistic Ave, Zone 1, Guatemala City, Guatemala",
+        "phone_number": "(502) 3345-6789",
+        "website_url": "https://www.creativedesignsgt.com",
+        "image_file": "designs_logo.jpg",
+        "membership_level": 1,
+        "industry": "Design & Marketing",
+        "year_founded": 2013
+      },
+      {
+        "name": "HealthCare Services GT",
+        "address": "852 Wellness Rd, Zone 15, Guatemala City, Guatemala",
+        "phone_number": "(502) 7845-9012",
+        "website_url": "https://www.healthcareservicesgt.com",
+        "image_file": "healthcare_logo.jpg",
+        "membership_level": 3,
+        "industry": "Healthcare",
+        "year_founded": 2014
+      }
+]

@@ -1,0 +1,113 @@
+/* Normalize CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* General Styles */
+body {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Menu for Grid/List view toggle */
+.menu {
+    margin-top: 1rem;
+}
+
+.menu button {
+    padding: 1rem;
+    margin: 0 10px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.menu button:hover {
+    background-color: #45a049;
+}
+
+/* Member cards layout */
+.members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+}
+
+.members section {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.members section img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.members section h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.members section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.members section a {
+    font-size: 1rem;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.members section a:hover {
+    text-decoration: underline;
+}
+
+/* Grid and List View */
+.grid .members {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.list .members {
+    display: block;
+}
+
+.list .members section {
+    max-width: 390px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+}

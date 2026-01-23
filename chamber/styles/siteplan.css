@@ -1,0 +1,58 @@
+:root{
+    --primary-color: #1E3A5F;
+    --secondary-color: #fdbf8b;
+    --accent1-color: #E76F51;
+    --accent2-color: #2A9D8F;
+    
+    --heading-font: "Montserrat", sans-serif;
+    --paragraph-font: "Lora", sans-serif;
+    --nav-font: "Montserrat", sans-serif;
+
+    --nav-background-color:var(--primary-color);
+    --nav-link-color:var(--secondary-color);
+    --nav-hover-link-color:var(--primary-color);
+    --nav-hover-background-color:var(--secondary-color);
+}
+
+body{
+    font-family:var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+ h2, h3, h4, h5, h6 {
+    font-family:var(--heading-font);
+    color:var(--primary-color);
+}
+
+header{
+    padding: 20px;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color:  var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
