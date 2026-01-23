@@ -69,7 +69,7 @@ nav {
   font-size: 2rem;
   background: none;
   border: none;
-  color: var(--accent1-color)
+  color: var(--accent1-color);
   cursor: pointer;
   width: 100%;
   text-align: right;
