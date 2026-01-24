@@ -18,12 +18,17 @@ const byuiCourse = {
       instructor: "Sister Smith",
     },
   ],
-  changeEnrollment(sectionNumber, add = true) {
-    const section = this.sections.find(
-      s => s.sectionNumber == sectionNumber
+  changeEnrollment: function (sectionNumber, add = true) {
+    // Find the section with the given section number
+    const sectionIndex = this.sections.findIndex(
+      (section) => section.sectionNumber == sectionNumber,
     );
-    if (section) {
-      add ? section.enrolled++ : section.enrolled--;
+    if (sectionIndex >= 0) {
+      if (add) {
+        this.sections[sectionIndex].enrolled++;
+      } else {
+        this.sections[sectionIndex].enrolled--;
+      }
     }
   },
 };
