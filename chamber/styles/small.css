@@ -46,7 +46,6 @@ h1 {
 
 .acard {
   display: inline-block;
-  margin: top 0.5rem;
   padding: 0.5rem 1rem;
   background-color: var(--primary-color);
   color: var(--secondary-color);
