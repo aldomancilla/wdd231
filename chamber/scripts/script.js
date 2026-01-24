@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             <p>Phone Number: ${member.phone_number}</p>
             <br>
             <p>Year Founded: ${member.year_founded}</p>
-            <a href="${member.websiteUrl}" target="_blank">Visit Website</a>
+            <a href="${member.websiteUrl}" target="_blank" class="acard">Visit Website</a>
         `;
         return section;
     }
