@@ -59,15 +59,15 @@
 //   document.querySelector("#sections").innerHTML = html.join("");
 // }
 
-document.querySelector("#enrollStudent").addEventListener("click", function () {
-  const sectionNum = Number(document.querySelector("#sectionNumber").value);
-  byuiCourse.changeEnrollment(sectionNum);
-});
-document.querySelector("#dropStudent").addEventListener("click", function () {
-  const sectionNum = Number(document.querySelector("#sectionNumber").value);
-  byuiCourse.changeEnrollment(sectionNum, false);
-});
+// document.querySelector("#enrollStudent").addEventListener("click", function () {
+//   const sectionNum = Number(document.querySelector("#sectionNumber").value);
+//   byuiCourse.changeEnrollment(sectionNum);
+// });
+// document.querySelector("#dropStudent").addEventListener("click", function () {
+//   const sectionNum = Number(document.querySelector("#sectionNumber").value);
+//   byuiCourse.changeEnrollment(sectionNum, false);
+// });
 
-setTitle(byuiCourse);
-setSectionSelection(byuiCourse.sections);
-renderSections(byuiCourse.sections);
+// setTitle(byuiCourse);
+// setSectionSelection(byuiCourse.sections);
+// renderSections(byuiCourse.sections);
