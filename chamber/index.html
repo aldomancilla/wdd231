@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Directory | Pinula Chamber Commerce</title>
+    <title>Home | Pinula Chamber Commerce</title>
     <meta
       name="description"
       content="Dynamic online community that supports business growth in Pinula, Guatemala. The site will feature
@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-    <script src="scripts/script.js" defer></script>
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/random_member.js" defer></script>
+
     <!-- Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,11 +58,12 @@
             <nav>
               <button id="hambutton"></button>
               <ul class="navigation">
-                <li><a href="index.html" title="Home">Home</a></li>
-                <li>
-                  <a href="#" title="Discover" class="active">Discover</a>
-                </li>
                 <li class="current-menu-item">
+                  <a href="index.html" title="Home">Home</a></li>
+                <li>
+                  <a href="#" title="Discover" >Discover</a>
+                </li>
+                <li class="active">
                   <a href="directory.html" title="Directory">Directory</a>
                 </li>
                 <li><a href="#" title="Join">Join</a></li>
@@ -69,13 +72,50 @@
           </div>
         </div>
       </header>
-      <h1>Business Directory</h1>
+        <section class="hero">
+          <picture>
+            <source
+              srcset="images/hero-large.webp"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="images/hero-medium.webp"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="images/hero-small.webp"
+              alt="Collage of local businesses in Pinula, Guatemala"
+              width="100%"
+          </picture>
+
+          <div class="hero-text">
+            <h1>Join the Chaber Today!</h1>
+            <p>Support Local Businesses</p>
+            <a href="join.html" class="btn-cta">Become a Member</a>
+          </div>
+        </section>
+      <br>
+        <section class="content" id="OpenWeather">
+        <div class="members"></div>
+            <h2>Current Weather in <span id="town"></span></h2>
+            <img id="graphic" src="" alt="">
+            <p id="description"></p>
+            <p id="temperature"></p>
+            
+            <h2>Forecast</h2>
+            <div id="forecast"></div>
+      </section>
+      <br>
+
+      <!-- <article class="members"></article> -->
+
+      <!-- <h1>Business Directory</h1>
       <div class="menu">
         <button id="grid">Grid View</button>
         <button id="list">List View</button>
-      </div>
+      </div> -->
 
-      <article class="members"></article>
+      <article class="members-home"></article>
 
       <footer>
         <div class="footer-container">
