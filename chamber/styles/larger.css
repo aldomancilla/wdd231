@@ -5,10 +5,10 @@
     box-sizing: border-box;
   }
 
-.content{
-  max-width: 400px;
+  .content {
+    max-width: 100%;
     margin: 0 auto;
-  };
+  }
 
   #hambutton {
     display: none;
@@ -71,6 +71,18 @@
     height: 44px;
     object-fit: contain;
   }
-  
-  
+  .page-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .content-a {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .content {
+    grid-area: 1 / 2 / 2 / 3;
+  }
 }
