@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Pinula Chamber Commerce</title>
+    <title>Thank You | Pinula Chamber Commerce</title>
     <meta
       name="description"
       content="Dynamic online community that supports business growth in Pinula, Guatemala. The site will feature
@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/random_member.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 
     <!-- Fonts -->
 
@@ -58,106 +57,55 @@
             <nav>
               <button id="hambutton"></button>
               <ul class="navigation">
-                <li class="current-menu-item">
+                <li class="active">
                   <a href="index.html" title="Home">Home</a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="#" title="Discover">Discover</a>
                 </li>
                 <li class="active">
                   <a href="directory.html" title="Directory">Directory</a>
                 </li>
-                <li><a href="join.html" title="Join">Join</a></li>
+                <li class="current-menu-item">
+                  <a href="join.html" title="Join">Join</a>
+                </li>
               </ul>
             </nav>
           </div>
         </div>
       </header>
-      <section class="hero">
-        <picture>
-          <source srcset="images/hero-large.webp" media="(min-width: 1200px)" />
-          <source srcset="images/hero-medium.webp" media="(min-width: 768px)" />
-          <img
-            src="images/hero-small.webp"
-            alt="Local businesses in Pinula, Guatemala"
-            width="100%"
-          />
-        </picture>
+      <h1>Join the Pinula Chamber Commerce</h1>
+      <div class="form-container">
+        <!-- <p>
+          Thank you for your interest in joining the Pinula Chamber Commerce! .
+        </p> -->
+        <section class="thankyou-card">
+          <h1>Thank You <span id="firstName"></span>!</h1>
+          <p>Your membership application has been received.</p>
 
-        <div class="hero-text">
-          <h1>Join the Chaber Today!</h1>
-          <p>Support Local Businesses</p>
-          <a href="join.html" class="btn-cta">Join</a>
-        </div>
-      </section>
-      <br />
-      <div class="page-grid">
-        <section class="content-a">
-          <h2>Upcoming Events</h2>
+          <h2>Submitted Information</h2>
 
-          <div class="event-day">
-            <h3>February 5, 2026</h3>
-            <p class="day-name">Thursday</p>
-            <ul>
-              <li>
-                <span class="time">9:00am – 10:30am</span>
-                <span class="title"
-                  >Guatemala Business Networking Breakfast</span
-                >
-              </li>
-            </ul>
-          </div>
+          <dl>
+            <dt>First Name</dt>
+            <dd id="firstName"></dd>
 
-          <div class="event-day">
-            <h3>February 10, 2026</h3>
-            <p class="day-name">Tuesday</p>
-            <ul>
-              <li>
-                <span class="time">10:00am – 12:00pm</span>
-                <span class="title">SME Growth Workshop | Guatemala City</span>
-              </li>
-            </ul>
-          </div>
-          <div class="event-day">
-            <h3>February 18, 2026</h3>
-            <p class="day-name">Wednesday</p>
-            <ul>
-              <li>
-                <span class="time">1:00pm – 2:30pm</span>
-                <span class="title"
-                  >Sustainable Trade Forum | Antigua Guatemala</span
-                >
-              </li>
-            </ul>
-          </div>
+            <dt>Last Name</dt>
+            <dd id="lastName"></dd>
 
-          <div class="event-day">
-            <h3>February 24, 2026</h3>
-            <p class="day-name">Tuesday</p>
-            <ul>
-              <li>
-                <span class="time">9:30am – 11:00am</span>
-                <span class="title"
-                  >Entrepreneurship & Innovation Roundtable</span
-                >
-              </li>
-            </ul>
-          </div>
+            <dt>Email</dt>
+            <dd id="email"></dd>
+
+            <dt>Mobile Phone</dt>
+            <dd id="phone"></dd>
+
+            <dt>Business Name</dt>
+            <dd id="organization"></dd>
+
+            <dt>Submission Date</dt>
+            <dd id="timestamp"></dd>
+          </dl>
         </section>
-        <br />
-        <section class="content" id="OpenWeather">
-          <div class="members"></div>
-          <h2>Current Weather in <span id="town"></span></h2>
-          <img id="graphic" src="" alt="" />
-          <p id="description"></p>
-          <p id="temperature"></p>
-
-          <h2>Forecast</h2>
-          <div id="forecast"></div>
-        </section>
-        <br />
       </div>
-      <article class="members-home"></article>
 
       <footer>
         <div class="footer-container">

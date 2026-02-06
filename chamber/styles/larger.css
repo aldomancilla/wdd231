@@ -85,4 +85,28 @@
   .content {
     grid-area: 1 / 2 / 2 / 3;
   }
+
+  /* form  */
+  .form-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .cards {
+        animation: slideIn 1s ease forwards;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(30px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
 }

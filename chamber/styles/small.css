@@ -13,6 +13,9 @@
   --nav-hover-link-color: var(--primary-color);
   --nav-hover-background-color: var(--secondary-color);
 }
+* {
+  box-sizing: border-box;
+}
 
 header {
   max-width: 100%;
@@ -358,4 +361,175 @@ footer {
 .btn-cta:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+}
+
+/* form */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+form {
+  background: var(--accent1-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--accent2-color);
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+label span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--accent2-color);
+}
+
+textarea {
+  min-height: 100px;
+}
+
+input[type="submit"] {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  opacity: 0;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 5px solid var(--primary-color);
+  border: 1px solid var(--accent2-color);
+  text-align: center;
+  align-content: center;
+  padding-bottom: 40px;
+  box-shadow: #00000033 0px 4px 8px 0px;
+}
+
+.card p {
+  margin-bottom: 25px;
+}
+
+.card a {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+
+.card a:hover {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+
+dialog {
+  border: none;
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+dialog button.close {
+  background: var(--primary-color);
+  color: var(--accent1-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+dialog::backdrop {
+  background: #1e3a5f9b;
+  backdrop-filter: blur(5px);
+}
+
+/* Validation styles */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid var(--accent2-color);
+  outline-offset: 2px;
+}
+
+input:required:invalid,
+select:required:invalid {
+  border-left: 6px solid var(--primary-color);
+}
+
+input:required:valid,
+select:required:valid {
+  border-left: 6px solid var(--secondary-color);
+}
+
+input::placeholder {
+  color: #999;
+}
+
+/* Thank you page styles */
+.thankyou {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.thankyou-card {
+  max-width: 600px;
+  background: var(--accent1-color);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem 1rem;
+}
+
+dt {
+  font-weight: 600;
 }
