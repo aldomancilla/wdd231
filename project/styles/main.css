@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #030a39;
+  --secondary-color: #fe7303;
+  --accent1-color: #ffffff;
+  --accent2-color: #000000;
+
+  --heading-font: "Raleway", sans-serif;
+  --paragraph-font: "Anton", sans-serif;
+  --nav-font: "Raleway", sans-serif;
+
+  --nav-background-color: var(--primary-color);
+  --nav-link-color: var(--secondary-color);
+  --nav-hover-link-color: var(--primary-color);
+  --nav-hover-background-color: var(--secondary-color);
+  --nav-active-link-color: var(--primary-color);
+  --nav-active-background-color: var(--secondary-color);
+}
+

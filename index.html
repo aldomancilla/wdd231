@@ -1,128 +1,105 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD231 Homepage</title>
-    <meta
-      name="description"
-      content="A 231 Web Development Course Home Page with the the about me section, and the Web and Computer Programming certificate curses detail list and credits owned"
-    />
-    <meta name="author" content="Aldo Mancilla" />
 
-    <link rel="icon" href="images/favicon.ico">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD231 Homepage</title>
+  <meta name="description"
+    content="A 231 Web Development Course Home Page with the the about me section, and the Web and Computer Programming certificate curses detail list and credits owned" />
+  <meta name="author" content="Aldo Mancilla" />
 
-    <!-- My stylesheet links -->
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
+  <link rel="icon" href="images/favicon.ico">
 
-    <!-- My JavaScript file -->
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
-    <script src="scripts/date.js" defer></script>
+  <!-- My stylesheet links -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
 
-    <!--My font links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    
-  </head>
+  <!-- My JavaScript file -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+  <script src="scripts/date.js" defer></script>
 
-  <body>
-    <header>
-      <img src="images/logo.svg" alt="Site logo" width="48" height="48" />
-      <span>WDD231 Homepage</span>
-      <button id="ham-btn" class="hamburger"></button>
-    </header>
-    <nav id="nav-bar" class="navigation">
-      <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="chamber.html">Chamber</a></li>
-        <li><a href="final.html">Final</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section>
-        <h1>Home</h1>
+  <!--My font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet" />
 
-        <div class="container">
-          <div class="aboutme">
-            <h2 class="titles">About me</h2>
-            <p>
-              My name is Aldo Mancilla. I am from Guatemala and some of my
-              hobbies are climbing volcanoes and play basketball. I enjoy family
-              time and nature that allows us to appreciate the impressive
-              creations of our heavenly father. <br /><br />
-              I love everything related to design, creativity web and e-commerce
-              development. <br /><br />
-              I feel grateful for Jesus Christ in my life and I strive to make
-              him a central part of my life and that of my family.
-            </p>
-          </div>
-          <div class="photo">
-            <h2 class="titles">My Photo</h2>
-            <img
-              src="images/myphoto.webp"
-              alt="My Photo"
-              width="300"
-              height="300"
-            />
-          </div>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Site logo" width="48" height="48" />
+    <span>WDD231 Homepage</span>
+    <button id="ham-btn" class="hamburger"></button>
+  </header>
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="chamber.html">Chamber</a></li>
+      <li><a href="/project/index.html">Final</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h1>Home</h1>
+
+      <div class="container">
+        <div class="aboutme">
+          <h2 class="titles">About me</h2>
+          <p>
+            My name is Aldo Mancilla. I am from Guatemala and some of my
+            hobbies are climbing volcanoes and play basketball. I enjoy family
+            time and nature that allows us to appreciate the impressive
+            creations of our heavenly father. <br /><br />
+            I love everything related to design, creativity web and e-commerce
+            development. <br /><br />
+            I feel grateful for Jesus Christ in my life and I strive to make
+            him a central part of my life and that of my family.
+          </p>
         </div>
-        <section class="division">
-          <h2>_________________</h2>
-        </section>
-      </section>
-      <section class="courses_sec">
-        <h2 class="titles">Web & Computer Certificate</h2>
-
-        <div class="filters">
-          <button id="btnAll">All Courses</button>
-          <button id="btnWdd">WDD Courses</button>
-          <button id="btnCse">CSE Courses</button>
-          <p id="totalCredits">Total Credits: 0</p>
+        <div class="photo">
+          <h2 class="titles">My Photo</h2>
+          <img src="images/myphoto.webp" alt="My Photo" width="300" height="300" />
         </div>
-        <div class="course_cont">
-          <button id="course0" class="curse_btn"></button>
-          <button id="course1" class="curse_btn"></button>
-          <button id="course2" class="curse_btn"></button>
-          <button id="course3" class="curse_btn"></button>
-          <button id="course4" class="curse_btn"></button>
-          <button id="course5" class="curse_btn"></button>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="social">
-        <a href="https://www.facebook.com/aldo.mancilla.gt" target="_blank"
-          ><img
-            src="images/facebook.svg"
-            alt="Facebook profile"
-            width="24"
-            height="24"
-        /></a>
-        <a href="https://github.com/aldomancilla" target="_blank"
-          ><img
-            src="images/github.svg"
-            alt="github profile"
-            width="24"
-            height="24"
-        /></a>
-        <a href="https://www.linkedin.com/in/aldo-mancilla/" target="_blank"
-          ><img
-            src="images/linkedin.svg"
-            alt="linkedin profile"
-            width="24"
-            height="24"
-        /></a>
       </div>
-      <p>© <span id="year"></span> WDD 231 Course</p>
-      <p>Last Modified: <span id="lastModified"></span></p>
-    </footer>
-  </body>
+      <section class="division">
+        <h2>_________________</h2>
+      </section>
+    </section>
+    <section class="courses_sec">
+      <h2 class="titles">Web & Computer Certificate</h2>
+
+      <div class="filters">
+        <button id="btnAll">All Courses</button>
+        <button id="btnWdd">WDD Courses</button>
+        <button id="btnCse">CSE Courses</button>
+        <p id="totalCredits">Total Credits: 0</p>
+      </div>
+      <div class="course_cont">
+        <button id="course0" class="curse_btn"></button>
+        <button id="course1" class="curse_btn"></button>
+        <button id="course2" class="curse_btn"></button>
+        <button id="course3" class="curse_btn"></button>
+        <button id="course4" class="curse_btn"></button>
+        <button id="course5" class="curse_btn"></button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://www.facebook.com/aldo.mancilla.gt" target="_blank"><img src="images/facebook.svg"
+          alt="Facebook profile" width="24" height="24" /></a>
+      <a href="https://github.com/aldomancilla" target="_blank"><img src="images/github.svg" alt="github profile"
+          width="24" height="24" /></a>
+      <a href="https://www.linkedin.com/in/aldo-mancilla/" target="_blank"><img src="images/linkedin.svg"
+          alt="linkedin profile" width="24" height="24" /></a>
+    </div>
+    <p>© <span id="year"></span> WDD 231 Course</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+
 </html>
