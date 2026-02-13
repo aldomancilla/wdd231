@@ -148,6 +148,9 @@ footer {
   border-radius: 50%;
   border: 1px solid var(--accent1-color);
 }
+.footer a {
+  color: var(--accent1-color);
+}
 /* Hero */
 .hero {
   width: 100%;
@@ -175,8 +178,6 @@ footer {
   margin: 0;
   padding: 20px;
   width: 90%;
-  max-width: 960px;
-  min-width: 320px;
 }
 
 .hero-text h1 {
@@ -203,11 +204,6 @@ footer {
 
 .cta-button:hover {
   background-color: var(--secondary-color);
-  color: var(--accent1-color);
-}
-
-.year {
-  font-size: 0.9rem;
   color: var(--accent1-color);
 }
 
