@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 64rem) {
     /* nav {
     margin: 0 auto;
     box-sizing: border-box;
@@ -11,14 +11,14 @@
   ul.navigation {
     display: flex;
     justify-content: center;
-    /* margin-right: 3rem; */
     list-style-type: none;
     background-color: var(--accent1-color);
   }
 
   ul.navigation a:hover {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: var(--accent1-color);
   }
 
   nav {
@@ -28,21 +28,15 @@
     background-color: var(--accent1-color);
     border-bottom: 1.5px solid var(--primary-color);
   }
+  .hero {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+  }
 
   .hero-text {
-  position: absolute;
-  display: grid;
-  margin: 30px;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--accent1-color);
-  background-color: #030a39ac;
-  border-radius: 15px;
-  text-align: center;;
-  padding: 40px;
-  width: 30%;
-}
+    padding: 40px;
+  }
 
   .content {
     max-width: 1200px;
