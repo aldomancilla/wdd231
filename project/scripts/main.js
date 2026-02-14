@@ -1,5 +1,6 @@
 import { data } from "../data/communities.mjs";
 import { clientVisits } from "./clientVisits.mjs";
+import { formFields } from "./form.mjs";
 
 const dataContainer = document.querySelector("#datacont");
 const hamButton = document.querySelector('#hambutton');
@@ -79,3 +80,5 @@ if (visitDisplay) {
   visitDisplay.textContent =
     `You have visited this site ${visits} time${visits > 1 ? "s" : ""}.`;
 }
+
+formFields();
