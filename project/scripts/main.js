@@ -5,6 +5,9 @@ import { formFields } from "./form.mjs";
 const dataContainer = document.querySelector("#datacont");
 const hamButton = document.querySelector('#hambutton');
 const navigation = document.querySelector('.navigation');
+const modal = document.querySelector("#modal");
+const modalBody = document.querySelector("#modalBody");
+const closeBtn = document.querySelector("#closeModal");
 
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
@@ -43,8 +46,6 @@ async function displayData() {
     card.innerHTML = `
       <h3>${data.name}</h3>
       <p><strong>Country:</strong> ${data.country}</p>
-      <p><strong>Pollution Level:</strong> ${data.level}</p>
-      <p><strong>Main Issue:</strong> ${data.pollution}</p>
       <button class="detailsBtn">View Details</button>
     `;
 
@@ -58,8 +59,11 @@ async function displayData() {
 
 displayData();
 
-function openModal(data){
-  modal.style.display="flex";
+function openModal(data) {
+  if (!modal || !modalBody) return;
+
+  modal.style.display = "flex";
+
   modalBody.innerHTML = `
     <h2>${data.name}</h2>
     <p><strong>Country:</strong> ${data.country}</p>
@@ -68,9 +72,11 @@ function openModal(data){
   `;
 }
 
-closeModal?.addEventListener("click",()=>{
-  modal.style.display="none";
-});
+if (modal && closeBtn) {
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+}
 
 const visitDisplay = document.querySelector("#visitCounter");
 
@@ -81,4 +87,6 @@ if (visitDisplay) {
     `You have visited this site ${visits} time${visits > 1 ? "s" : ""}.`;
 }
 
-formFields();
+document.addEventListener("DOMContentLoaded", () => {
+  formFields();
+});

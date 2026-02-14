@@ -1,16 +1,23 @@
 export function formFields() { 
     const params = new URLSearchParams(window.location.search);
+
     const requiredFields = [ 
         "firstName", 
         "lastName", 
         "email", 
         "phone",
-        "timestamp", 
+        "membership"
     ];
-      requiredFields.forEach((field) => { 
+
+    requiredFields.forEach((field) => { 
         const element = document.getElementById(field);
-         if (element) { 
+        if (element) { 
             element.textContent = params.get(field) || "Not provided";
         } 
-    }); 
+    });
+
+    const firstNameTitle = document.getElementById("firstNameTitle");
+    if (firstNameTitle) {
+        firstNameTitle.textContent = params.get("firstName") || "Friend";
+    }
 }

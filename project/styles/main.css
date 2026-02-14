@@ -173,19 +173,18 @@ input::placeholder {color:var(--primary-color);}
   padding: 2rem 1rem;
 }
 .thankyou-card {
-  max-width: 600px;
-  background: var(--accent1-color);
+  max-width: 960px; text-align: center;
   padding: 2rem;
   border-radius: 8px;
   border: 1px solid var(--accent2-color);
 }
-.grid{
+.grid {
   display:grid;
   gap:1.5rem;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   padding:2rem;
 }
-.card{
+.card {
   padding:1.5rem;
   border-radius:10px;
   box-shadow:0 5px 15px rgba(0, 0, 0, 0.138);
@@ -193,9 +192,9 @@ input::placeholder {color:var(--primary-color);}
   opacity:0;
   transform:translateY(20px);
   }
-.card.visible{ opacity:1; transform:translateY(0); transition:opacity .6s ease, transform .6s ease;}
-.card:hover{ transform:translateY(-6px); box-shadow:0 10px 25px rgba(0,0,0,.15);}
-.card button{
+.card.visible { opacity:1; transform:translateY(0); transition:opacity .6s ease, transform .6s ease;}
+.card:hover { transform:translateY(-6px); box-shadow:0 10px 25px rgba(0,0,0,.15);}
+.card button {
   margin-top:1rem;
   padding:.5rem 1rem;
   border:none;
@@ -205,20 +204,20 @@ input::placeholder {color:var(--primary-color);}
   cursor:pointer;
   transition:var(--transition);
 }
-.card button:hover{ background:var(--secondary-color);}
-.modal{
+.card button:hover { background:var(--secondary-color);}
+.modal { 
   display:none; position:fixed;
   inset:0; background:rgba(0,0,0,.7);
   justify-content:center; align-items:center;
 }
-.modal-content{
+.modal-content {
   background: var(--accent1-color);
   padding:2rem;
   width:300px; height: 300px;
   border-radius:10px;
   animation:slideUp .4s ease;
 }
-.modal button{
+.modal button {
   padding:.5rem 1rem; border:none;
   background:var(--primary-color); color:var(--accent1-color);
   border-radius:5px; cursor:pointer;

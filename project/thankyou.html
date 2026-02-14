@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico" />
-    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/main.js" type="module" ></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,100 +50,27 @@
                 </div>
             </div>
         </header>
-        <div class="hero">
-          <picture>
-            <source srcset="images/hero-large02.webp" media="(min-width: 1200px)" loading="lazy"/>
-            <source srcset="images/hero-medium02.webp" media="(min-width: 768px)" loading="lazy"/>
-            <img
-              src="images/hero-small02.webp"
-              alt="volunteers cleaning a beach"
-              width="100%"loading="lazy"
-            />
-          </picture>
-          <div class="hero-text">
-            <h1>Protecting Marine Ecosystems and Coastal Communities</h1>
-              <p>
-                Guatemala’s marine ecosystems and coastal communities face serious risks from ocean pollution. By raising awareness and taking responsibility, we can protect our oceans and ensure a sustainable future for all.
-              </p>
-              
-          </div>
-        </div>
-
         <div class="form-container">
-            <div class="fhead">
-              <img src="images/logopeq.webp" alt="Sea of Hope Logo" width="100" class="logo" loading="lazy"/>
-              <h1>Get Involved</h1>
-              <p>Pollution in our oceans threatens Guatemala’s marine life and the well-being of coastal communities. Together, through awareness and decisive action, we can protect these waters and secure a healthier tomorrow.</p>
-            </div>
-          <form method="get" action="thankyou.html">
-            <label>
-            <span>First Name</span>
-            <input
-              type="text"
-              name="firstName"
-              title="Applicant First Name"
-              required
-              autocomplete="given-name"
-            />
-            </label>
+            <section class="thankyou-card">
+            <h1>Thank You <span id="firstName"></span>!</h1>
+            <p>Your Program application has been received.</p>
 
-            <label>
-            <span>Last Name</span>
-            <input
-              type="text"
-              name="lastName"
-              title="Applicant Last Name"
-              required
-              autocomplete="family-name"
-            />
-            </label>
+            <h2>Submitted Information</h2>
 
-            <!-- <label>
-            <span>Organizational Name</span>
-            <input
-              type="text"
-              name="orgTitle"
-              title="Organizational Title"
-              autocomplete="organization-title"
-              pattern="[A-Za-z\- ]{7,}"
-            />
-            </label> -->
+            <dl>
+                <dt>First Name</dt>
+                <dd id="firstName"></dd>
 
-            <label>
-            <span>Email Address</span>
-            <input
-              type="email"
-              name="email"
-              title="Email Address"
-              required
-              autocomplete="email"
-              placeholder="example@email.com"
-            />
-            </label>
+                <dt>Last Name</dt>
+                <dd id="lastName"></dd>
 
-            <label>
-            <span>Mobile Phone</span>
-            <input
-              type="tel"
-              name="phone"
-              title="Mobile Phone"
-              required
-              autocomplete="tel"
-            />
-            </label>
+                <dt>Email</dt>
+                <dd id="email"></dd>
 
-            <label>
-            <span>Program to Join</span>
-            <select name="membership" title="Membership Level" required>
-              <option value="">Select a program</option>
-              <option value="cleaning">Cleaning Ocean program</option>
-              <option value="thriving">Thriving Communities</option>
-              <option value="marine-life">Healthy Marine Life</option>
-            </select>
-            </label>
-            <input type="submit" value="Join" />
-          </form>
-          <br><br>
+                <dt>Mobile Phone</dt>
+                <dd id="phone"></dd>
+            </dl>
+        </section>
         </div>
     </main>
     <footer>
