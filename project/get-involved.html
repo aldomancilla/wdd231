@@ -68,19 +68,15 @@
               
           </div>
         </div>
-          
-          <div class="content">
-            <div>
+
+        <div class="form-container">
+            <div class="fhead">
+              <img src="images/logopeq.webp" alt="Sea of Hope Logo" width="100" class="logo" loading="lazy"/>
+              <h1>Get Involved</h1>
+              <p>Pollution in our oceans threatens Guatemala’s marine life and the well-being of coastal communities. Together, through awareness and decisive action, we can protect these waters and secure a healthier tomorrow.</p>
             </div>
-          </div>
-          <div class="container">
-            <div>
-                <img src="images/logopeq.webp" alt="Sea of Hope Logo" width="100" class="logo" loading="lazy"/>
-                <h1>Get Involved</h1>
-                <p>Pollution in our oceans threatens Guatemala’s marine life and the well-being of coastal communities. Together, through awareness and decisive action, we can protect these waters and secure a healthier tomorrow.</p>
-              </div>
-              <form method="get" action="thankyou.html">
-          <label>
+          <form method="get" action="thankyou.html">
+            <label>
             <span>First Name</span>
             <input
               type="text"
@@ -89,9 +85,9 @@
               required
               autocomplete="given-name"
             />
-          </label>
+            </label>
 
-          <label>
+            <label>
             <span>Last Name</span>
             <input
               type="text"
@@ -100,10 +96,10 @@
               required
               autocomplete="family-name"
             />
-          </label>
+            </label>
 
-          <label>
-            <span>Organizational Title</span>
+            <!-- <label>
+            <span>Organizational Name</span>
             <input
               type="text"
               name="orgTitle"
@@ -111,9 +107,9 @@
               autocomplete="organization-title"
               pattern="[A-Za-z\- ]{7,}"
             />
-          </label>
+            </label> -->
 
-          <label>
+            <label>
             <span>Email Address</span>
             <input
               type="email"
@@ -123,9 +119,9 @@
               autocomplete="email"
               placeholder="example@email.com"
             />
-          </label>
+            </label>
 
-          <label>
+            <label>
             <span>Mobile Phone</span>
             <input
               type="tel"
@@ -134,43 +130,20 @@
               required
               autocomplete="tel"
             />
-          </label>
+            </label>
 
-          <label>
-            <span>Business / Organization Name</span>
-            <input
-              type="text"
-              name="organization"
-              title="Organization Name"
-              required
-              autocomplete="organization"
-            />
-          </label>
-
-          <label>
-            <span>Membership Level</span>
+            <label>
+            <span>Program to Join</span>
             <select name="membership" title="Membership Level" required>
-              <option value="">Select a level</option>
-              <option value="np">NP Membership</option>
-              <option value="bronze">Bronze Membership</option>
-              <option value="silver">Silver Membership</option>
-              <option value="gold">Gold Membership</option>
+              <option value="">Select a program</option>
+              <option value="cleaning">Cleaning Ocean program</option>
+              <option value="thriving">Thriving Communities</option>
+              <option value="marine-life">Healthy Marine Life</option>
             </select>
-          </label>
-
-          <label>
-            <span>Organization Description</span>
-            <textarea
-              name="description"
-              title="Organization Description"
-            ></textarea>
-          </label>
-
-          <input type="hidden" name="timestamp" id="timestamp" />
-
-          <input type="submit" value="Join" />
-        </form>
-        <br><br>
+            </label>
+            <input type="submit" value="Join" />
+          </form>
+          <br><br>
         </div>
     </main>
     <footer>

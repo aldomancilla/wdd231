@@ -142,10 +142,8 @@ footer {
 .content2 h3{ margin-top: 25px; color: var(--primary-color);}
 .content2 p, .content1 p, .content3 p, .content4 p, .content5 p { margin-bottom: 25px; text-align: justify;}
 .form-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
+  display: flex; flex-direction: column; gap: 2rem;
+  padding: 2rem; max-width: 960px; margin: 0 auto;
 }
 form {
   background: var(--accent1-color);
@@ -153,18 +151,17 @@ form {
   border-radius: 8px;
   border: 1px solid var(--accent2-color);
 }
+.fhead img {display: block; margin: 0 auto;}
 label { display: block; margin-bottom: 1rem;}
 label span { font-weight: 600; display: block; margin-bottom: 0.25rem;}
-textarea { min-height: 100px;}
+input, select, textarea { width: 100%; padding: 0.5rem; border-radius: 5px; border: 1px solid var(--accent2-color);}
 input[type="submit"] {
   background: var(--primary-color);
-  color: var(--secondary-color);
-  border: none;
-  padding: 0.75rem;
-  font-size: 1.2rem;
-  border-radius: 4px;
+  color: var(--accent1-color);
+  margin-top: 2rem; border: none; padding: 0.75rem;
+  font-size: 1.2rem; border-radius: 4px;
   cursor: pointer;
-}
+} input[type="submit"]:hover { background: var(--secondary-color); color: var(--accent1-color);}
 input[type="submit"]:hover { background: var(--secondary-color); color: var(--accent1-color);}
 input:focus, select:focus, textarea:focus {outline: 3px solid var(--accent2-color); outline-offset: 2px;}
 input:required:invalid, select:required:invalid { border-left: 6px solid var(--primary-color);}
@@ -183,46 +180,46 @@ input::placeholder {color:var(--primary-color);}
   border: 1px solid var(--accent2-color);
 }
 .grid{
-    display:grid;
-    gap:1.5rem;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    padding:2rem;
+  display:grid;
+  gap:1.5rem;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  padding:2rem;
+}
+.card{
+  padding:1.5rem;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0, 0, 0, 0.138);
+  transition:transform .3s ease, box-shadow .3s ease;
+  opacity:0;
+  transform:translateY(20px);
   }
-  .card{
-    padding:1.5rem;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0, 0, 0, 0.138);
-    transition:transform .3s ease, box-shadow .3s ease;
-    opacity:0;
-    transform:translateY(20px);
-  }
-  .card.visible{ opacity:1; transform:translateY(0); transition:opacity .6s ease, transform .6s ease;}
-  .card:hover{ transform:translateY(-6px); box-shadow:0 10px 25px rgba(0,0,0,.15);}
-  .card button{
-    margin-top:1rem;
-    padding:.5rem 1rem;
-    border:none;
-    background:var(--primary-color);
-    color:var(--accent1-color);
-    border-radius:5px;
-    cursor:pointer;
-    transition:var(--transition);
-  }
-  .card button:hover{ background:var(--secondary-color);}
-  .modal{
-    display:none; position:fixed;
-    inset:0; background:rgba(0,0,0,.7);
-    justify-content:center; align-items:center;
-  }
-  .modal-content{
-    background: var(--accent1-color);
-    padding:2rem;
-    width:300px; height: 300px;
-    border-radius:10px;
-    animation:slideUp .4s ease;
-  }
-  .modal button{
-    padding:.5rem 1rem; border:none;
-    background:var(--primary-color); color:var(--accent1-color);
-    border-radius:5px; cursor:pointer;
-  }
+.card.visible{ opacity:1; transform:translateY(0); transition:opacity .6s ease, transform .6s ease;}
+.card:hover{ transform:translateY(-6px); box-shadow:0 10px 25px rgba(0,0,0,.15);}
+.card button{
+  margin-top:1rem;
+  padding:.5rem 1rem;
+  border:none;
+  background:var(--primary-color);
+  color:var(--accent1-color);
+  border-radius:5px;
+  cursor:pointer;
+  transition:var(--transition);
+}
+.card button:hover{ background:var(--secondary-color);}
+.modal{
+  display:none; position:fixed;
+  inset:0; background:rgba(0,0,0,.7);
+  justify-content:center; align-items:center;
+}
+.modal-content{
+  background: var(--accent1-color);
+  padding:2rem;
+  width:300px; height: 300px;
+  border-radius:10px;
+  animation:slideUp .4s ease;
+}
+.modal button{
+  padding:.5rem 1rem; border:none;
+  background:var(--primary-color); color:var(--accent1-color);
+  border-radius:5px; cursor:pointer;
+}
