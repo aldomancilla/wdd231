@@ -3,6 +3,7 @@
   --secondary-color: #fe7303;
   --accent1-color: #ffffff;
   --accent2-color: #000000;
+  --transparency-color: #030a3993;
   --paragraph-font: "Raleway", sans-serif;
   --nav-font: "Lora", sans-serif;
 }
@@ -187,13 +188,14 @@ input::placeholder {color:var(--primary-color);}
 .card {
   padding:1.5rem;
   border-radius:10px;
-  box-shadow:0 5px 15px rgba(0, 0, 0, 0.138);
+  box-shadow:0 5px 15px var();
   transition:transform .3s ease, box-shadow .3s ease;
   opacity:0;
+  border: 1px solid var(--primary-color);
   transform:translateY(20px);
   }
 .card.visible { opacity:1; transform:translateY(0); transition:opacity .6s ease, transform .6s ease;}
-.card:hover { transform:translateY(-6px); box-shadow:0 10px 25px rgba(0,0,0,.15);}
+.card:hover { transform:translateY(-6px); box-shadow:0 5px 5px var(--accent2-color);}
 .card button {
   margin-top:1rem;
   padding:.5rem 1rem;
@@ -207,7 +209,7 @@ input::placeholder {color:var(--primary-color);}
 .card button:hover { background:var(--secondary-color);}
 .modal { 
   display:none; position:fixed;
-  inset:0; background:rgba(0,0,0,.7);
+  inset:0; background: var(--transparency-color);
   justify-content:center; align-items:center;
 }
 .modal-content {
