@@ -189,9 +189,7 @@ input::placeholder {color:var(--primary-color);}
   padding:1.5rem;
   border-radius:10px;
   box-shadow:0 5px 5px var();
-  opacity:0;
   border: 1px solid var(--primary-color);
-  transform:translateY(20px);
   }
 .card.visible { opacity:1; transform:translateY(0); transition:opacity .6s ease, transform .6s ease;}
 .card:hover { transform:translateY(-6px); box-shadow:0 5px 5px var(--accent2-color);}
