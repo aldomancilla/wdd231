@@ -1,22 +1,4 @@
-export const communities = [
-  {
-    "name": "Puerto Barrios",
-    "country": "Guatemala",
-    "level": "High",
-    "pollution": "Plastic and solid waste pollution"
-  },
-  {
-    "name": "Livingston",
-    "country": "Guatemala",
-    "level": "High",
-    "pollution": "Waste carried by the Motagua River"
-  },
-  {
-    "name": "Amatique Bay",
-    "country": "Guatemala",
-    "level": "High",
-    "pollution": "Accumulation of marine debris and plastics"
-  },
+export const data = [
   {
     "name": "Champerico",
     "country": "Guatemala",
@@ -78,10 +60,28 @@ export const communities = [
     "pollution": "Waste carried by ocean currents"
   },
   {
-    "name": "Tilapa",
+    "name": "Amatique Bay",
+    "country": "Guatemala",
+    "level": "Medium",
+    "pollution": "Localized waste contamination"
+  },
+  {
+    "name": "Livinston",
+    "country": "Guatemala",
+    "level": "Medium",
+    "pollution": "Occasional solid waste pollution"
+  },
+  {
+    "name": "Punta de Manavique",
     "country": "Guatemala",
     "level": "Low",
-    "pollution": "Localized waste contamination"
+    "pollution": "Plastic accumulatio"
+  },
+  {
+    "name": "Playa Blanca",
+    "country": "Guatemala",
+    "level": "Low",
+    "pollution": "Mangrove impact from plastic waste"
   },
   {
     "name": "Playa Blanca (Izabal)",

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved | Sea of Hope</title>
+    <meta name="Description" content="Get Involved in Ocean pollution Awareness and protecting our oceans for future generations.">
+    <meta name="Author" content="Aldo Mancilla">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico" />
+    <script src="scripts/main.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- meta tag  -->
+     <meta property="og:title" content="Final Project | Sea of Hope">
+        <meta property="og:description" content="Get Involved in Ocean pollution Awareness and protecting our oceans for future generations.">
+        <meta property="og:image" content="https://aldomancilla.github.io/wdd231/project/fb_metatag.jpg" alt="Sea of Hope - Facebook Meta Tag Image">
+        <meta property="og:url" content="https://aldomancilla.github.io/wdd231/project/get-involved.html">
+        <meta property="og:type" content="website">
+
+</head>
+<body>
+    <main>
+        <header>
+            <div class="header-container">
+                <div class="hle">
+                    <a href="index.html">
+                        <img src="images/logopeq.webp" alt="Sea of Hope Logo" width="100" class="logo" loading="lazy" />
+                    </a>
+                </div>
+                <div class="hr">
+                    <nav>
+                    <button id="hambutton"></button>
+                    <ul class="navigation">
+                        <li >
+                            <a href="index.html">Home</a></li>
+                        <li>
+                            <a href="solutions.html">Solutions</a></li>
+                        <li class="current-active">
+                            <a href="get-involved.html">Get Involved</a>
+                        </li>
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="hero">
+          <picture>
+            <source srcset="images/hero-large02.webp" media="(min-width: 1200px)" loading="lazy"/>
+            <source srcset="images/hero-medium02.webp" media="(min-width: 768px)" loading="lazy"/>
+            <img
+              src="images/hero-small02.webp"
+              alt="volunteers cleaning a beach"
+              width="100%"loading="lazy"
+            />
+          </picture>
+          <div class="hero-text">
+            <h1>Protecting Marine Ecosystems and Coastal Communities</h1>
+              <p>
+                Guatemala’s marine ecosystems and coastal communities face serious risks from ocean pollution. By raising awareness and taking responsibility, we can protect our oceans and ensure a sustainable future for all.
+              </p>
+              
+          </div>
+        </div>
+          
+          <div class="content">
+            <div>
+              <!-- <div>
+                <img src="images/logopeq.webp" alt="Sea of Hope Logo" width="100" class="logo" loading="lazy"/>
+                <h2>Sea of Hope</h2>
+                <p>Pollution in our oceans threatens Guatemala’s marine life and the well-being of coastal communities. Together, through awareness and decisive action, we can protect these waters and secure a healthier tomorrow.</p>
+              </div> -->
+            </div>
+          </div>
+          <div class="container">
+            <div>
+                <img src="images/logopeq.webp" alt="Sea of Hope Logo" width="100" class="logo" loading="lazy"/>
+                <h2>Sea of Hope</h2>
+                <p>Pollution in our oceans threatens Guatemala’s marine life and the well-being of coastal communities. Together, through awareness and decisive action, we can protect these waters and secure a healthier tomorrow.</p>
+              </div>
+              <form method="get" action="thankyou.html">
+          <label>
+            <span>First Name</span>
+            <input
+              type="text"
+              name="firstName"
+              title="Applicant First Name"
+              required
+              autocomplete="given-name"
+            />
+          </label>
+
+          <label>
+            <span>Last Name</span>
+            <input
+              type="text"
+              name="lastName"
+              title="Applicant Last Name"
+              required
+              autocomplete="family-name"
+            />
+          </label>
+
+          <label>
+            <span>Organizational Title</span>
+            <input
+              type="text"
+              name="orgTitle"
+              title="Organizational Title"
+              autocomplete="organization-title"
+              pattern="[A-Za-z\- ]{7,}"
+            />
+          </label>
+
+          <label>
+            <span>Email Address</span>
+            <input
+              type="email"
+              name="email"
+              title="Email Address"
+              required
+              autocomplete="email"
+              placeholder="example@email.com"
+            />
+          </label>
+
+          <label>
+            <span>Mobile Phone</span>
+            <input
+              type="tel"
+              name="phone"
+              title="Mobile Phone"
+              required
+              autocomplete="tel"
+            />
+          </label>
+
+          <label>
+            <span>Business / Organization Name</span>
+            <input
+              type="text"
+              name="organization"
+              title="Organization Name"
+              required
+              autocomplete="organization"
+            />
+          </label>
+
+          <label>
+            <span>Membership Level</span>
+            <select name="membership" title="Membership Level" required>
+              <option value="">Select a level</option>
+              <option value="np">NP Membership</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Organization Description</span>
+            <textarea
+              name="description"
+              title="Organization Description"
+            ></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp" />
+
+          <input type="submit" value="Join" />
+        </form>
+        <br><br>
+        </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+          <!-- Address -->
+          <div>
+            <p>
+              &copy; Sea of Hope
+            </p>
+            <p>
+              Fake Avenue 987, Guatemala City, Guatemala, ZC 01014 | Telephone: (502) 1020-3040
+            </p>
+            
+          </div>
+
+          <!-- Social Media -->
+          <div class="footer-column center">
+            <a href="https://www.facebook.com" target="_blank">
+              <img
+                src="images/facebookw.svg"
+                alt="Facebook"
+                class="social-icon" loading="lazy"
+              />
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img
+                src="images/instagramw.svg"
+                alt="Instagram"
+                class="social-icon" loading="lazy"
+              />
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="images/youtubew.svg" alt="Youtube" class="social-icon" loading="lazy"/>
+            </a>
+          </div>
+          <!-- Visits Counter -->
+          <div>
+            <p id="visitCounter"></p>
+          </div>
+      </div>
+    </footer>
+    <div id="modal" class="modal" role="dialog"     aria-modal="true" aria-hidden="true">
+      <div class="modal-content">
+        <button id="closeModal" aria-label="Cerrar">&times;</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+</body>
+</html>
