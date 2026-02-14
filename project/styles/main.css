@@ -188,8 +188,7 @@ input::placeholder {color:var(--primary-color);}
 .card {
   padding:1.5rem;
   border-radius:10px;
-  box-shadow:0 5px 15px var();
-  transition:transform .3s ease, box-shadow .3s ease;
+  box-shadow:0 5px 5px var();
   opacity:0;
   border: 1px solid var(--primary-color);
   transform:translateY(20px);
