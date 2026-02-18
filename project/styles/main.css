@@ -7,6 +7,20 @@
   --paragraph-font: "Raleway", sans-serif;
   --nav-font: "Lora", sans-serif;
 }
+@font-face {
+  font-display: swap; 
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/raleway-v37-latin-500.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lora-v37-latin-regular.woff2') format('woff2');
+}
  * { box-sizing: border-box;}
 .header-container {
     display: flex;
@@ -19,7 +33,7 @@
 p { font-family: var(--paragraph-font); font-weight: 400; margin: 10px;}
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--nav-font);
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   margin: 10px;
 }
