@@ -60,10 +60,29 @@ async function displayData() {
 
 displayData();
 
+// function openModal(data) {
+//   if (!modal || !modalBody) return;
+
+//   modal.style.display = "flex";
+
+//   modalBody.innerHTML = `
+//     <h2>${data.name}</h2>
+//     <p><strong>Country:</strong> ${data.country}</p>
+//     <p><strong>Pollution Level:</strong> ${data.level}</p>
+//     <p><strong>Main Issue:</strong> ${data.pollution}</p>
+//   `;
+// }
+
+// if (modal && closeBtn) {
+//   closeBtn.addEventListener("click", () => {
+//     modal.style.display = "none";
+//   });
+// }
+
 function openModal(data) {
   if (!modal || !modalBody) return;
 
-  modal.style.display = "flex";
+  modal.classList.add("active");
 
   modalBody.innerHTML = `
     <h2>${data.name}</h2>
@@ -75,7 +94,7 @@ function openModal(data) {
 
 if (modal && closeBtn) {
   closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
+    modal.classList.remove("active");
   });
 }
 

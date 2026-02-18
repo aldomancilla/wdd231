@@ -217,22 +217,20 @@ input::placeholder {color:var(--primary-color);}
   cursor:pointer;
   transition:var(--transition);
 }
-.card button:hover { background:var(--secondary-color);}
 .modal { 
-  display:none; position:fixed;
-  inset:0; background: var(--transparency-color);
-  backdrop-filter: blur(5px);
-  justify-content:center; align-items:center;
+  position: fixed; inset: 0;
+  background: var(--transparency-color);
+  backdrop-filter: blur(5px); padding: 2rem;
+  display: flex; justify-content: center; align-items: center;
+  opacity: 0; visibility: hidden; transform: scale(0.98);
+  transition: opacity .25s ease, transform .25s ease;
 }
+.modal.active { opacity: 1; visibility: visible; transform: scale(1);}
+
 .modal-content {
-  background: var(--accent1-color);
-  padding:2rem;
-  width:300px; height: 300px;
-  border-radius:10px;
-  animation:slideUp .4s ease;
-}
+  background: var(--accent1-color); padding: 2rem;
+  width: 300px; height: 300px; border-radius: 10px;}
 .modal button {
   padding:.5rem 1rem; border:none;
   background:var(--primary-color); color:var(--accent1-color);
   border-radius:5px; cursor:pointer;
-}
